@@ -22,17 +22,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', ( err, db)=>{
 //     console.log(result);
 //   });
 
-// db.collection('Users').updateMany({
-//   _id: new ObjectID('5b083f5b334bc148d289e7ee')
-// },{
-//   $set: {
-//     name: 'Guru'
-//   }
-// }, {
-//   returnOriginal: false
-// }).then((result) => {
-//   console.log(result);
-// });
+
 
 db.collection('Users').findOneAndUpdate({
   _id: new ObjectID('5b083f5b334bc148d289e7ee')
